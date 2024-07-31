@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Nunito:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Nunito:wght@400;500;700&family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+
+
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 30%;
+    height: 90%;
+    box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 20px 10px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.chatui {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 5px;
+    width: 100%;
+}
+
+.chattext {
+    background-color: rgb(228, 250, 242);
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.logoside {
+    display: flex;
+    align-items: center;
+    width: 205px;
+    height: 67px;
+}
+
+.snitems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 366px;
+}
+
+.snitem {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Add transition for smooth effect */
+}
+
+.snitem:hover {
+    background-color: #003F52;
+    /* Change button background to dark blue */
+    color: white;
+    /* Change text color to white */
+}
+
+.snitem:hover .snitext1,
+.snitem:hover .snitext2 {
+    color: white;
+    /* Change text color to white on hover */
+}
+
+.snitem:hover .snilink {
+    opacity: 1;
+    /* Make link visible on hover */
+    visibility: visible;
+    /* Ensure link is visible */
+}
+
+.snitext {
+    display: flex;
+    flex-direction: column;
+}
+
+.snlogo {
+    width: 19px;
+    height: 19px;
+}
+.snitem:hover .snlogo{
+    background: white;
+}
+.snilink {
+    display: flex;
+    align-items: center;
+    height: 18px;
+    font-family: Plus Jakarta Sans;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    color: #003F52;
+    transition: color 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    /* Add transition for smooth effect */
+    background-color: rgb(228, 250, 242);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.snitext1 {
+    width: 124px;
+    height: 30px;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: #003F52;
+    transition: color 0.3s ease;
+    /* Add transition for smooth effect */
+}
+
+.snitext2 {
+    width: 192px;
+    height: 20px;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: left;
+    color: #003F52;
+    transition: color 0.3s ease;
+    /* Add transition for smooth effect */
+}
+
+.pbutton { 
+    position: relative;
+    top: -30px;
+    border: none;
+    padding: 13px 15px;
+    border-radius: 8px;
+    background: #6fafaa;
+    color: white;
+}
+
+.pbutton:hover { 
+    
+    color: #6fafaa;
+    background: white;
+}
+
+.ptext1 {
+    width: 122px;
+    height: 18px;
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+    position: relative;
+    /* or absolute, fixed */
+    top: -50px;
+}
+
+.ptext2 {
+    width: 208px;
+    height: 48px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    position: relative;
+    /* or absolute, fixed */
+    top: -40px;
+}
+
+.pimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80.35px;
+    height: 80.35px;
+    gap: 0px;
+    border: 4.27px;
+    position: relative;
+    /* or absolute, fixed */
+    top: -50px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    height: 198px;
+    padding: 24px;
+    border-radius: 10px;
+    border: 3px;
+    background: #459E97;
+    margin-top: 80px;
+}
+
+.profile2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.profile2 img {
+    width: 25px;
+    height: 25px;
+}
+
+.protext{
+    color: #459E97;
+    font-weight: 600;
+}
+
+.vectorimg {
+    background: #FEA500;
+    padding: 2PX;
+    border-radius: 2PX;
+}
+
+.ftext{
+    font-size: small;
+    color: #459E97;
+}
